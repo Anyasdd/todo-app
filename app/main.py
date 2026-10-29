@@ -12,7 +12,7 @@ def health():
 
 @app.get("/version")
 def version():
-    return jsonify(version="v1")
+    return jsonify(version="v2")
 
 
 @app.get("/todos")
