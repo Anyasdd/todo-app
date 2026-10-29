@@ -10,6 +10,11 @@ def health():
     return jsonify(status="ok")
 
 
+@app.get("/version")
+def version():
+    return jsonify(version="v1")
+
+
 @app.get("/todos")
 def list_todos():
     return jsonify(todos)
